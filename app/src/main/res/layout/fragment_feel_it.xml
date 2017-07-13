@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andreea.runawayfinal4.FeelIt">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/super_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Super!"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/good_button"
+        android:layout_alignStart="@+id/good_button" />
+
+    <Button
+        android:id="@+id/good_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good!"
+        android:layout_above="@+id/bad_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp" />
+
+    <Button
+        android:id="@+id/bad_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I don't want to do this anymore!"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:textSize="23dp"
+        android:text="How do you feel?"
+        android:layout_above="@+id/super_button"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
