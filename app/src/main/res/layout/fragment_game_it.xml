@@ -1,13 +1,41 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context="com.example.andreea.runawayfinal4.GameIt">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Game it!" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/besties_button"
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dudes_button"
+        android:background="#E1B4CD"
+        android:elevation="0dp"
+        android:onClick="onClick"
+
+        android:text="Besties" />
+
+    <Button
+        android:id="@+id/dudes_button"
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:background="#9BC2C2"
+        android:elevation="0dp"
+        android:onClick="onClick"
+        android:text="Dudes" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/besties_button"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="" />
+
+</RelativeLayout>

@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.TextView;
 
 
 public class FeelIt extends Fragment {
@@ -16,14 +16,18 @@ public class FeelIt extends Fragment {
         // Required empty public constructor
     }
 
+    //Button btnMove;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
 
+
         return inflater.inflate(R.layout.fragment_feel_it, container, false);
     }
+
+
 
 
     public void onResume(){
@@ -33,6 +37,8 @@ public class FeelIt extends Fragment {
         ((MainActivity) getActivity()).setTitle("How do you feel?");
 
     }
+
+
 
 
 

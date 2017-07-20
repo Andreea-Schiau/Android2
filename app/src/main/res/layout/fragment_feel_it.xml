@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF7F7"
     tools:context="com.example.andreea.runawayfinal4.FeelIt">
 
     <!-- TODO: Update blank fragment layout -->
@@ -9,40 +10,47 @@
 
     <Button
         android:id="@+id/super_button"
-        android:layout_width="wrap_content"
+        android:layout_width="700px"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="Super!"
-        android:layout_marginBottom="21dp"
-        android:layout_above="@+id/good_button"
-        android:layout_alignStart="@+id/good_button" />
+        android:layout_marginTop="57dp"
+        android:layout_alignTop="@+id/textView2"
+        android:background="#DCF2DC"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/good_button"
-        android:layout_width="wrap_content"
+        android:layout_width="700px"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClick"
         android:text="Good!"
-        android:layout_above="@+id/bad_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp" />
+        android:background="#B7E3B7"
+        android:layout_below="@+id/super_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/bad_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#88CD88"
+        android:onClick="onClick"
         android:text="I don't want to do this anymore!"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="128dp" />
+        android:layout_below="@+id/good_button"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
         android:textSize="23dp"
         android:text="How do you feel?"
-        android:layout_above="@+id/super_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
 
 
 </RelativeLayout>
